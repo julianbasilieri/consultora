@@ -1,11 +1,10 @@
 html {
     scroll-behavior: smooth;
-   /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
-   para probar la diferencia con y sin scroll suavizado*/
 }
 
 body {
     overflow: overlay;
+    overflow-x: hidden;
 }
 
 .nav {
@@ -13,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #logo-nav {
@@ -22,6 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70px;
 }
 
 #ref {
@@ -30,10 +30,15 @@ body {
     border-radius: 10px;
 }
 
+#ref-sidenav {
+    font-size: large;
+    font-family: alata;
+    align-content: center;
+    height: auto;
+}
+
 #mobile-demo {
-    background-color: #76d4ff;
-    /* background-color: #40aaf2; */
-    /* background-color: #1183cf; */
+    background-color: #fff;
 }
 
 section {
@@ -47,47 +52,67 @@ section {
     margin-bottom: 5%;
 }
 
-#section-img-desktop {
+#img {
     width: 40%;
+    max-width: 600px;
     height: auto;
-    -webkit-box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75);
-box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75);
-}
+    -webkit-box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.75);
 
-#section-img-mobile {
-    width: 70%;
-    height: auto;
-    -webkit-box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75);
-box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75);
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
-
-#section-img-desktop {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-#section-img-mobile {
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+
+
+#ciclo {
+    width: 40%;
 }
+
+#contacto-content {
+    width: 30%;
+}
+
+
 
 #carta {
-    width: 30%;
+    min-width: 250px;
+    max-width: 30%;
     margin: 1%;
+    background-color: #279bc8;
 }
+
+#formas {
+    min-width: 250px;
+    width: 20%;
+    margin-left: 50px;
+}
+
+#formas p {
+    width: 230px;
+}
+
+
+#porque-elegirnos .card {
+    width: 250px;
+    margin: 20px;
+    background-color: #279bc8;
+    color: white;
+}
+
+.card-image img {
+    height: 200px;
+}
+
+#porque-elegirnos p {
+    font-family: alata;
+    font-size: large;
+    width: 60%;
+}
+
+
 
 
 
@@ -114,8 +139,83 @@ footer .fa {
 }
 
 footer .container p {
-    display: flex;
-    justify-content: flex-end;
     font-family: monospace;
     font-weight: 900;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    #img {
+        width: 60%;
+    }
+
+    #ciclo {
+        width: 70%;
+    }
+
+    #contacto-content {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 750px) {
+    #porque-elegirnos p {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #img {
+        width: 80%;
+    }
+
+    #ciclo {
+        width: 100%;
+    }
+
+    #contacto-content {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    #formas {
+        margin-left: 0px;
+    }
+
+    #formas p {
+        margin-left: 0px;
+    }
+
+    #porque-elegirnos .card {
+        margin: 0px;
+        margin-top: 10%;
+        margin-left: -9%;
+    }
+
+    #logo-nav {
+        height: 60px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    #porque-elegirnos h4,
+    p {
+        margin-left: -9%;
+    }
 }

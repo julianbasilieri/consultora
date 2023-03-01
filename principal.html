@@ -19,33 +19,56 @@
     <div class="header">
         <nav class="nav">
             <div id="logo-nav" style="display: flex; justify-content: center; align-items: center">
-                <img src="logo.png" alt="logo.png" class="left" style="height: 70px;">
-                <h4 style="font-size: auto;">Consulting <br> Company</h4>
-            </div>
+                <img src="logo.png" alt="logo.png" class="left responsive-img" style="height: 100%;">
+                <h4 class="flow-text">Consulting <br> Company</h4>
+            </div>  
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a id="ref" href="#quienes-somos">¿Quienes somos?</a></li>
                 <li><a id="ref" href="#nuestros-clientes">Nuestros clientes</a></li>
                 <li><a id="ref" href="#soluciones">Soluciones</a></li>
-                <li><a id="ref" href="#">¿Como lo hacemos?</a></li>
-                <li><a id="ref" href="#">¿Porque elegirnos?</a></li>
+                <li><a id="ref" href="#como-lo-hacemos">¿Como lo hacemos?</a></li>
+                <li><a id="ref" href="#porque-elegirnos">¿Porque elegirnos?</a></li>
+                <li><a id="ref" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a id="ref" href="#quienes-somos">¿Quienes somos?</a></li>
-            <li><a id="ref" href="#nuestros-clientes">Nuestros clientes</a></li>
-            <li><a id="ref" href="#soluciones">Soluciones</a></li>
-            <li><a id="ref" href="#">¿Como lo hacemos?</a></li>
-            <li><a id="ref" href="#">¿Porque elegirnos?</a></li>
+        <ul class="sidenav" id="mobile-demo" style="width: 80%;">
+            <div id="logo-nav" style="display: flex; justify-content: center; align-items: center; margin-top: 40px;">
+                <img src="logo.png" alt="logo.png" class="left" style="height: 70px;">
+            </div>
+            <li>
+                <div class="divider"></div>
+            </li>
+
+            <li><a id="ref-sidenav" class="sidenav-close" href="#quienes-somos">¿Quienes somos?</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a id="ref-sidenav" class="sidenav-close" href="#nuestros-clientes">Nuestros clientes</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a id="ref-sidenav" class="sidenav-close" href="#soluciones">Soluciones</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a id="ref-sidenav" class="sidenav-close" href="#como-lo-hacemos">¿Como lo hacemos?</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a id="ref-sidenav" class="sidenav-close" href="#porque-elegirnos">¿Porque elegirnos?</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a id="ref-sidenav" class="sidenav-close" href="#contacto">Contacto</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
         </ul>
     </div>
 
     <section id="quienes-somos">
-        <img class="responsive-img hide-on-small-only" id="section-img-desktop"
-            src="https://coworkingfy.com/wp-content/uploads/2019/11/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo.jpg"
-            alt="equipo-trabajo.png">
-
-        <img class="responsive-img hide-on-med-and-up" id="section-img-mobile"
+        <img class="responsive-img" id="img"
             src="https://coworkingfy.com/wp-content/uploads/2019/11/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo.jpg"
             alt="equipo-trabajo.png">
         <div
@@ -71,82 +94,217 @@
             </p>
         </div>
 
-        <img class="responsive-img hide-on-small-only" id="section-img-desktop"
+        <img class="responsive-img" id="img"
             src="https://pdrwebsolutions.com/wp-content/uploads/2018/03/baltimore-business-attracting-more-customers-website-marketing-1024x768.jpg"
             alt="nuestros-clientes.png">
 
-        <img class="responsive-img hide-on-med-and-up" id="section-img-mobile"
-            src="https://pdrwebsolutions.com/wp-content/uploads/2018/03/baltimore-business-attracting-more-customers-website-marketing-1024x768.jpg"
-            alt="nuestros-clientes.png">
     </section>
 
     <section id="soluciones" style="display: flex; flex-direction: column;">
         <h4 class="center">Brindamos soluciones a:</h4>
-
-        <div style="display: flex; flex-wrap: wrap; min-width: 600px;">
-
-            <div id="carta" class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">PROCESOS</span>
-                        <p>Diseñamos soluciones para ayudar a mejorar la situación financiera de nuestros clientes y
-                            tomar decisiones informadas sobre el manejo de sus recursos. Nuestros servicios incluyen
-                            la
-                            optimización de la estructura de capital, la planificación financiera a largo plazo, la
-                            gestión de riesgos financieros y la mejora de la eficiencia y transparencia en la
-                            gestión de
-                            las finanzas. </p>
-                    </div>
+        <div style="display: flex; flex-wrap: wrap; width: 100%; justify-content: center;">
+            <div id="carta" class="card">
+                <div class="card-content white-text">
+                    <span class="card-title">PROCESOS</span>
+                    <p>Diseñamos soluciones para ayudar a mejorar la situación financiera de nuestros clientes y
+                        tomar decisiones informadas sobre el manejo de sus recursos. Nuestros servicios incluyen
+                        la
+                        optimización de la estructura de capital, la planificación financiera a largo plazo, la
+                        gestión de riesgos financieros y la mejora de la eficiencia y transparencia en la
+                        gestión de
+                        las finanzas. </p>
                 </div>
             </div>
 
-            <div id="carta" class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">FINANZAS</span>
-                        <p>Diseñamos soluciones para ayudar a mejorar la situación financiera de nuestros clientes y
-                            tomar decisiones informadas sobre el manejo de sus recursos. Nuestros servicios incluyen
-                            la
-                            optimización de la estructura de capital, la planificación financiera a largo plazo, la
-                            gestión de riesgos financieros y la mejora de la eficiencia y transparencia en la
-                            gestión de
-                            las finanzas. </p>
-                    </div>
+            <div id="carta" class="card">
+                <div class="card-content white-text">
+                    <span class="card-title">FINANZAS</span>
+                    <p>Diseñamos soluciones para ayudar a mejorar la situación financiera de nuestros clientes y
+                        tomar decisiones informadas sobre el manejo de sus recursos. Nuestros servicios incluyen
+                        la
+                        optimización de la estructura de capital, la planificación financiera a largo plazo, la
+                        gestión de riesgos financieros y la mejora de la eficiencia y transparencia en la
+                        gestión de
+                        las finanzas. </p>
                 </div>
             </div>
 
-            <div id="carta">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">MARKETING</span>
-                        <p>Ofrecemos soluciones para incrementar presencia en el mercado objetivo. Para ello
-                            desarrollamos planes de marketing a medida, investigación de mercado, el desarrollo de
-                            estrategias de marketing e implementación de campañas publicitarias. </p>
-                    </div>
+            <div id="carta" class="card">
+                <div class="card-content white-text">
+                    <span class="card-title">MARKETING</span>
+                    <p>Ofrecemos soluciones para incrementar presencia en el mercado objetivo. Para ello
+                        desarrollamos planes de marketing a medida, investigación de mercado, el desarrollo de
+                        estrategias de marketing e implementación de campañas publicitarias. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-lo-hacemos"
+        style="background-color: #ecf4fe; margin-left: 0px; margin-right: 0px; flex-direction: column; padding-bottom: 10px;">
+        <h4 class="center">Como lo hacemos:</h4>
+        <img src="ciclo.png" alt="" id="ciclo" class="responsive-img">
+        <div style="display: flex; justify-content: center; flex-direction: column; margin-top: 50px;">
+            <!-- Agregar flex-direction: column para que queden separados en columnas -->
+
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <div id="formas" class="center">
+                    <h5 style="display: flex; align-items: center;"><img src="check.png" alt=""
+                            style="height: 30px; margin-right: 5px;">Relevamiento</h5>
+                    <p>Relevamiento de procesos, roles, responsabilidades y sistemas de gestión.</p>
+                </div>
+                <div id="formas" class="center">
+                    <h5 style="display: flex; align-items: center;"><img src="check.png" alt=""
+                            style="height: 30px; margin-right: 5px;">Diagnostico</h5>
+                    <p>Mapeo general de procesos, Identificación de procesos claves, Análisis de GAP, análisis de
+                        Mejoras.
+                    </p>
                 </div>
             </div>
 
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <div id="formas" class="center">
+                    <h5 style="display: flex; align-items: center;"><img src="check.png" alt=""
+                            style="height: 30px; margin-right: 5px;">Definicion</h5>
+                    <p>Mapa de procesos, Organigrama, Estandarización de procesos / procedimientos, indicadores,
+                        Optimización de los sistemas de gestión.
+                    </p>
+                </div>
+                <div id="formas" class="center">
+                    <h5 style="display: flex; align-items: center;"><img src="check.png" alt=""
+                            style="height: 30px; margin-right: 5px;">Capacitacion</h5>
+                    <p>Talleres para el involucramiento a los equipos, Conceptos básicos de mejora de procesos,
+                        Capacitación
+                        sobre mejora continua.</p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <div id="formas" class="center">
+                    <h5 style="display: flex; align-items: center;"><img src="check.png" alt=""
+                            style="height: 30px; margin-right: 5px;">Mejora Continua</h5>
+                    <p>Seguimiento de las mejoras implementadas, Monitoreo de procesos, Análisis y seguimiento de
+                        tableros
+                        de control, Gestión de datos.</p>
+                </div>
+            </div>
         </div>
 
     </section>
 
+    <section id="porque-elegirnos" style="display: flex; flex-wrap: wrap; flex-direction: column;">
+        <h4 class="center">¿Porque elegirnos?</h4>
+        <p class="center flow-text">Nuestro equipo tiene un alto
+            entendimiento de las problemáticas que transitan las empresas en sus diferentes
+            ciclos de vida. El conocimiento, experiencia y seriedad nos definen al momento de encarar cada solución para
+            nuestros clientes.</p>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center">
+            <div class="card">
+                <div class="card-image">
+                    <img
+                        src="https://iappuebla.edu.mx/wp-content/uploads/2021/07/curso-induccion-al-sistema-nacional-anticorrupcion-04-04.png">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title">Enfoque en la mejora continua</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img
+                        src="https://cancun.uo.edu.mx/sites/default/files/blog/facebook/Comunicacion-Efectiva-Facebook.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title">Comunicacion y colaboracion</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img
+                        src="https://dev.focoeconomico.org/wp-content/uploads/2020/08/trabajador-esquemas-flexibilidad-laboral-1.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title">Flexibilidad y adaptabilidad</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img
+                        src="https://previews.123rf.com/images/faithie/faithie1503/faithie150300026/37116201-concepto-de-elecci%C3%B3n-de-soluciones-personalizadas-ilustraci%C3%B3n-objetivo.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title">Soluciones personalizadas</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="http://2.bp.blogspot.com/-OXlrinP5ax4/UbkyyjLk1vI/AAAAAAAADQw/7JAmwycNlXM/s1600/PCI.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title">Desarrollo de capacidades internas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" style="display: flex; align-items: flex-start;">
+        <div id="contacto-content" class="center">
+            <h3>Contacto</h3>
+            <p style="font-family: alata;">Escribenos y en breve nos pondremos en contacto contigo</p>
+            <img src="https://blog.debmedia.com/wp-content/uploads/2021/10/21-10-B-Contact-Center-y-Experiencia-del-Cliente-pre-1200x900.jpg"
+                alt="" style="width: 100%;">
+        </div>
+
+        <div class="row" style="margin: 0px;">
+            <form class="col s12" style="margin-top: 10%;">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Apellido</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="empresa" type="text" class="validate">
+                        <label for="empresa">Empresa</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="Por favor, ingrese un mail valido" data-success=""></span>
+                    </div>
+                </div>
+                <button class="waves-effect waves-light btn-large"
+                    style="width: 100%; background-color: #3baedb;">Enviar</button>
+                <!-- <button class="waves-effect waves-light btn-large"
+                    style="width: 100%; background-color: #279bc8;">Enviar</button> -->
+            </form>
+        </div>
 
 
 
-
+    </section>
 
     <footer>
         <section class="container center">
-            <h3 class="center" style="font-family: atala;">Contact</h3>
+            <h3 class="center" style="font-family: atala;">Social Media</h3>
             <div class="redes" style="margin-bottom:3%;">
                 <a class="btn-flat" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 <a class="btn-flat" href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a class="btn-flat" href="#" target="_blank"><i class="fa fa-whatsapp" arial-hidden="true"></i></a>
                 <a class="btn-flat" href="#" target="_blank"><i class="fa fa-linkedin" arial-hidden="true"></i></a>
-                <a class="btn-flat" href="#" target="_blank"><i class="fa fa-envelope" arial-hidden="true"></i></a>
             </div>
 
-            <p class="center">© 2023 Copyright of Consulting Company</p>
+            <p class="center">© 2023 Copyright de Consulting Company</p>
         </section>
     </footer>
 
