@@ -21,7 +21,7 @@
             <div id="logo-nav" style="display: flex; justify-content: center; align-items: center">
                 <img src="logo.png" alt="logo.png" class="left responsive-img" style="height: 100%;">
                 <h4 class="flow-text">Consulting <br> Company</h4>
-            </div>  
+            </div>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a id="ref" href="#quienes-somos">¿Quienes somos?</a></li>
@@ -140,7 +140,7 @@
         </div>
     </section>
 
-    <section id="como-lo-hacemos"
+    <section id="como-lo-hacemos" class="reveal"
         style="background-color: #ecf4fe; margin-left: 0px; margin-right: 0px; flex-direction: column; padding-bottom: 10px;">
         <h4 class="center">Como lo hacemos:</h4>
         <img src="ciclo.png" alt="" id="ciclo" class="responsive-img">
@@ -259,32 +259,35 @@
         </div>
 
         <div class="row" style="margin: 0px;">
-            <form class="col s12" style="margin-top: 10%;">
+            <form class="col s12" style="margin-top: 10%;" action="https://formsubmit.co/basilierijulian@gmail.com"
+                method="POST">
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="first_name" type="text" class="validate">
-                        <label for="first_name">Nombre</label>
+                        <label for="nombre">Nombre <span class="red-text">*</span></label>
+                        <input id="nombre" type="text" class="validate" required name="nombre">
                     </div>
                     <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Apellido</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="empresa" type="text" class="validate">
-                        <label for="empresa">Empresa</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
+                        <label for="email">Email <span class="red-text">*</span></label>
+                        <input id="email" type="email" class="validate" required name="email">
                         <span class="helper-text" data-error="Por favor, ingrese un mail valido" data-success=""></span>
                     </div>
                 </div>
-                <button class="waves-effect waves-light btn-large"
-                    style="width: 100%; background-color: #3baedb;">Enviar</button>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="empresa">Empresa <span class="red-text">*</span></label>
+                        <input id="empresa" type="text" class="validate" required name="empresa">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="mensaje">Mensaje <span class="red-text">*</span></label>
+                        <textarea id="mensaje" class="materialize-textarea validate" required name="mensaje"></textarea>
+                    </div>
+                </div>
+                
+                <button class="waves-effect waves-light btn-large" style="width: 100%; background-color: #3baedb;"
+                    type="submit">Enviar</button>
                 <!-- <button class="waves-effect waves-light btn-large"
                     style="width: 100%; background-color: #279bc8;">Enviar</button> -->
             </form>
