@@ -21,7 +21,7 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
-  reveal()
+
 
   window.addEventListener('load', ()=> {
 
