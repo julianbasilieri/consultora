@@ -22,3 +22,13 @@ function reveal() {
   
   window.addEventListener("scroll", reveal);
   reveal()
+
+  window.addEventListener('load', ()=> {
+
+    carga();
+  
+    function carga() {
+      document.getElementById('carga').className = 'hide';
+      document.getElementById('contenido').className = ''
+    }
+  })
