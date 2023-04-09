@@ -69,8 +69,6 @@ section {
     animation-fill-mode: forwards;
 }
 
-
-
 #ciclo {
     width: 40%;
 }
@@ -78,8 +76,6 @@ section {
 #contacto-content {
     width: 30%;
 }
-
-
 
 #carta {
     min-width: 250px;
@@ -98,7 +94,6 @@ section {
     width: 230px;
 }
 
-
 #porque-elegirnos .card {
     width: 200px;
     margin: 20px;
@@ -115,12 +110,6 @@ section {
     font-size: large;
     width: 60%;
 }
-
-
-
-
-
-
 
 footer {
     background-color: black;
@@ -152,6 +141,7 @@ footer .container p {
     font-size: 150px;
     animation: latidos 3s infinite;
     transform-origin: center;
+    margin-right: 20px;
 }
 
 
@@ -176,6 +166,10 @@ footer .container p {
 
     #contacto-content {
         width: 60%;
+    }
+
+    .btn-floating {
+        margin-right: 0px;
     }
 
 }
