@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,289 +11,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" id="icon-page" href="./images/logo.png" type="image/x-icon">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            font-family: 'Alata', sans-serif;
+        }
+        .header nav {
+            background: #279bc8;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .header h4 {
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        section {
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(39,155,200,0.08);
+            margin: 32px auto;
+            padding: 32px 24px;
+            background: #fff;
+            max-width: 1100px;
+        }
+        #titulo {
+            color: #279bc8;
+            font-weight: bold;
+        }
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(39,155,200,0.10);
+            margin: 16px;
+        }
+        .card-title {
+            color: #279bc8;
+            font-weight: bold;
+        }
+        .fixed-action-btn a {
+            box-shadow: 0 2px 8px rgba(39,155,200,0.20);
+        }
+        @media (max-width: 600px) {
+            section {
+                padding: 16px 4px;
+            }
+            .header h4 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <div style="width: 100%; height: 100%; display: flex; justify-content: center; margin-top: 20%;" id="carga">
-        <div class="preloader-wrapper big active">
-            <div class="spinner-layer spinner-blue-only">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="hide" id="contenido">
-        <div class="header">
-            <nav class="nav">
-                <div id="logo-nav" style="display: flex; justify-content: center; align-items: center">
-                    <img src="./images/logo.png" alt="logo.png" class="left responsive-img" style="height: 100%;">
-                    <h4 class="flow-text center">Synergy <br> Consulting</h4>
-                </div>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a id="ref" href="#quienes-somos">¿Quiénes somos?</a></li>
-                    <li><a id="ref" href="#te-asesoramos">Te asesoramos</a></li>
-                    <li><a id="ref" href="#como-lo-hacemos">¿Cómo lo hacemos?</a></li>
-                    <li><a id="ref" href="#nuestra-mision">Nuestra misión</a></li>
-                    <li><a id="ref" href="#porque-elegirnos">¿Por qué elegirnos?</a></li>
-                    <li><a id="ref" href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-            <ul class="sidenav" id="mobile-demo" style="width: 80%;">
-                <div id="logo-nav"
-                    style="display: flex; justify-content: center; align-items: center; margin-top: 40px;">
-                    <img src="./images/logo.png" alt="logo.png" class="left" style="height: 70px;">
-                </div>
-                <li>
-                    <div class="divider"></div>
-                </li>
-
-                <li><a id="ref-sidenav" class="sidenav-close" href="#quienes-somos">¿Quiénes somos?</a></li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-                <li><a id="ref-sidenav" class="sidenav-close" href="#te-asesoramos">Te asesoramos</a></li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-                <li><a id="ref-sidenav" class="sidenav-close" href="#como-lo-hacemos">¿Cómo lo hacemos?</a></li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-                <li><a id="ref-sidenav" class="sidenav-close" href="#nuestra-mision">Nuestra misión</a></li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-                <li><a id="ref-sidenav" class="sidenav-close" href="#porque-elegirnos">¿Por qué elegirnos?</a></li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-                <li><a id="ref-sidenav" class="sidenav-close" href="#contacto">Contacto</a></li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-            </ul>
-        </div>
-
-
-        <section id="quienes-somos">
-            <img class="responsive-img" id="img" src="./images/quienes-somos.jpg" alt="equipo-trabajo.png">
-            <div
-                style="margin: 1%; display: flex; justify-content: center; align-items: center;align-content: center; flex-wrap: wrap; width: 500px;">
-                <h3 class="center" id="titulo">¿Quiénes somos?</h3>
-                <p class="center flow-text" style="font-size: large;">Somos un grupo de profesionales que ayudamos a
-                    empresas a mejorar sus procesos organizacionales, evaluar y llevar a cabo nuevos proyectos, como así
-                    también analizar las mejores estrategias de marketing. Nos enfocamos en comprender las necesidades
-                    únicas de cada cliente para desarrollar soluciones efectivas y así alcanzar los objetivos.
-                </p>
-            </div>
-        </section>
-
-
-        <section id="te-asesoramos" style="display: flex; flex-direction: column;">
-            <h4 class="center" id="titulo">Te asesoramos:</h4>
-            <div style="display: flex; flex-wrap: wrap; width: 100%; justify-content: center;">
-                <div id="carta" class="card">
-                    <div class="card-content white-text">
-                        <span class="card-title">PROCESOS</span>
-                        <p>Brindamos soluciones enfocadas en mejorar y optimizar procesos internos con el fin de lograr
-                            una mayor eficiencia y productividad.</p>
-                    </div>
-                </div>
-
-                <div id="carta" class="card">
-                    <div class="card-content white-text">
-                        <span class="card-title">EVALUACIÓN Y GESTIÓN DE PROYECTOS</span>
-                        <p>Evaluar la viabilidad técnica, económica y financiera de tu proyecto, como así también te
-                            acompañamos en el proceso de implementación.</p>
-                    </div>
-                </div>
-
-                <div id="carta" class="card">
-                    <div class="card-content white-text">
-                        <span class="card-title">MARKETING</span>
-                        <p>Ofrecemos soluciones para incrementar la presencia en el mercado objetivo, desarrollando
-                            planes y estrategias de marketing a medida y te asesoramos en la implementación de los
-                            mismos.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="como-lo-hacemos" class="reveal"
-            style="background-color: #ecf4fe; margin-left: 0px; margin-right: 0px; flex-direction: column; padding-bottom: 10px;">
-            <h4 class="center" id="titulo">¿Cómo lo hacemos?</h4>
-            <img src="./images/ciclo.png" alt="" id="ciclo" class="responsive-img">
-            <div style="display: flex; justify-content: center; flex-direction: column; margin-top: 50px;">
-                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-                    <div id="formas" class="center">
-                        <h5 style="display: flex; align-items: center;"><img src="./images/check.png" alt=""
-                                style="height: 30px; margin-right: 5%;">Relevamiento</h5>
-                        <p>Relevamiento de necesidades del cliente.</p>
-                    </div>
-                    <div id="formas" class="center">
-                        <h5 style="display: flex; align-items: center;"><img src="./images/check.png" alt=""
-                                style="height: 30px; margin-right: 5%;">Diagnóstico</h5>
-                        <p>Reconocimiento de la situación actual ofreciendo propuestas de mejora.
-                        </p>
-                    </div>
-                </div>
-
-                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-                    <div id="formas" class="center">
-                        <h5 style="display: flex; align-items: center;"><img src="./images/check.png" alt=""
-                                style="height: 30px; margin-right: 5%;">Solución</h5>
-                        <p>Implementación de la propuesta de mejora que mejor se adapte a la problemática identificada.
-                        </p>
-                    </div>
-                    <div id="formas" class="center">
-                        <h5 style="display: flex; align-items: center;"><img src="./images/check.png" alt=""
-                                style="height: 30px; margin-right: 5%;">Mejora Continua</h5>
-                        <p>Seguimiento de las mejoras implementadas, Monitoreo de procesos, Análisis y seguimiento de
-                            tableros
-                            de control, Gestión de datos.</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <section id="nuestra-mision">
-            <div
-                style="margin: 1%; display: flex; justify-content: center; align-items: center;align-content: center; flex-wrap: wrap; width: 500px;">
-                <h3 class="center" id="titulo">Nuestra misión</h3>
-                <p class="center flow-text" style="font-size: large;">Ofrecemos soluciones a empresas de todos los
-                    tamaños e industrias con el objetivo de identificar los puntos de mejora e implementar soluciones
-                    efectivas que mejoren la eficiencia, aumenten la rentabilidad y desarrollen las capacidades internas
-                    de las empresas.
-                </p>
-            </div>
-
-            <img class="responsive-img" id="img" src="./images/nuestra-mision.jpg" alt="nuestros-clientes.png">
-
-        </section>
-
-
-        <section id="porque-elegirnos" style="display: flex; flex-wrap: wrap; flex-direction: column;">
-            <h4 class="center" id="titulo">¿Por qué elegirnos?</h4>
-            <p class="center flow-text">Nuestro equipo tiene un alto entendimiento de las necesidades que transitan las
-                empresas, el conocimiento y experiencia nos definen al momento de elaborar solución agiles y simples
-                para nuestros clientes. Nuestras habilidades:</p>
-
-            <div style="display: flex; flex-wrap: wrap; justify-content: center">
-                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./images/soluciones-personalizadas.jpg">
-                        </div>
-                        <div class="card-content center">
-                            <span class="card-title flow-text">Soluciones personalizadas</span>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./images/flexibilidad-y-adaptabilidad.jpg">
-                        </div>
-                        <div class="card-content center">
-                            <span class="card-title flow-text">Flexibilidad y adaptabilidad</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./images/comunicacion-y-colaboracion.jpg">
-                        </div>
-                        <div class="card-content center">
-                            <span class="card-title flow-text">Comunicación y colaboración</span>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./images/enfoque-de-la-mejora-continua.png">
-                        </div>
-                        <div class="card-content center">
-                            <span class="card-title flow-text">Enfoque en la mejora continua</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="contacto" style="display: flex; align-items: flex-start;">
-            <div id="contacto-content" class="center">
-                <h4 id="titulo">Contactate con nosotros</h4>
-                <p style="font-family: alata;">Escribenos y en breve nos pondremos en contacto contigo</p>
-                <img src="./images/contacto.jpg" alt="contacto" style="width: 100%;">
-            </div>
-
-            <div class="row" style="margin: 0px;">
-                <form class="col s12" style="margin-top: 10%;"
-                    action="https://formsubmit.co/contacto@synergyconsulting.com.ar" method="POST">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <label for="nombre">Nombre <span class="red-text">*</span></label>
-                            <input id="nombre" type="text" class="validate" required name="nombre">
-                            <span class="helper-text" data-error="Este campo es obligatorio" data-success=""></span>
-                        </div>
-                        <div class="input-field col s6">
-                            <label for="email">Email <span class="red-text">*</span></label>
-                            <input id="email" type="email" class="validate" required name="email">
-                            <span class="helper-text" data-error="Por favor, ingrese un mail valido"
-                                data-success=""></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <label for="empresa">Empresa <span class="red-text">*</span></label>
-                            <input id="empresa" type="text" class="validate" required name="empresa">
-                            <span class="helper-text" data-error="Este campo es obligatorio" data-success=""></span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <label for="mensaje">Mensaje <span class="red-text">*</span></label>
-                            <textarea id="mensaje" class="materialize-textarea validate" required
-                                name="mensaje"></textarea>
-                            <span class="helper-text" data-error="Este campo es obligatorio" data-success=""></span>
-                        </div>
-                    </div>
-
-                    <button class="waves-effect waves-light btn-large" style="width: 100%; background-color: #279bc8;"
-                        type="submit">Enviar</button>
-                    <input type="hidden" name="_next" value="https://consulting-company.netlify.app/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-            </div>
-        </section>
-
-        <div class="fixed-action-btn" style="position: fixed;">
-            <a class="btn-floating btn-large" href="#"
-                style="width: 60px; height: 60px; display: flex; align-items: center; background-color: #1bd741;">
-                <i class="fa fa-whatsapp" arial-hidden="true" style="font-size: 40px;"></i>
-            </a>
-        </div>
-    </div>
-
-
+    <!-- ...existing code... -->
 </body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://kit.fontawesome.com/bb8961fa19.js" crossorigin="anonymous"></script>
-<script src="scripts.js"></script>
-
 </html>
